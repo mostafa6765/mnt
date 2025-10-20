@@ -3,8 +3,6 @@ title: "demo"
 description: "Description of your new file."
 ---
 
-this is demo
-
 ```php
 $items = DB::table('users')
     ->offset(($request->query('page', 1) - 1) * $request->query('per_page', 10))
@@ -15,3 +13,9 @@ $total = DB::table('users')->count();
 
 return custom_paginate($request, $total, $items);
 ```
+
+this is demo
+
+<Info>
+  ok
+</Info>
