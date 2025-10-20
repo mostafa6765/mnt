@@ -74,3 +74,168 @@ car2 = Car("Toyota", "Corolla")
 car1.start()
 car2.start()
 ```
+
+---
+
+Excellent — let’s dive into **Module 1: Introduction to Object-Oriented Programming (OOP)** 🧠
+
+This module lays the foundation. You’ll understand what OOP _really_ is — not just syntax, but mindset and design philosophy.
+
+---
+
+## 🧩 **Module 1: Introduction to Object-Oriented Programming**
+
+### 🎯 **Learning Objectives**
+
+By the end of this module, you’ll be able to:
+
+- Understand the **concept and purpose** of OOP
+- Differentiate **procedural vs object-oriented programming**
+- Describe and identify the **four pillars** of OOP
+- Create your **first simple class and object** in Python and Java
+
+---
+
+## 1. What is OOP?
+
+**Object-Oriented Programming (OOP)** is a programming paradigm based on the concept of **objects**, which represent **real-world entities** (like `Car`, `Employee`, `BankAccount`).
+
+Each object combines:
+
+- **Data (attributes)** → variables
+- **Behavior (methods)** → functions
+
+OOP helps you model real systems and keep code modular, maintainable, and extensible.
+
+---
+
+### 🏗️ **Analogy: Real-World View**
+
+Think of a **Car**:
+
+- Attributes → `color`, `model`, `speed`
+- Methods → `start()`, `accelerate()`, `brake()`
+
+The **class** is the blueprint.\
+The **object** is the actual car built from that blueprint.
+
+---
+
+## 2. Procedural vs Object-Oriented
+
+| Feature   | Procedural                  | Object-Oriented             |
+| :-------- | :-------------------------- | :-------------------------- |
+| Structure | Sequence of steps/functions | Objects interacting         |
+| Focus     | Actions (functions)         | Entities (objects)          |
+| Data      | Exposed globally            | Encapsulated inside objects |
+| Example   | C, early Python             | Java, C++, modern Python    |
+
+---
+
+## 3. Four Pillars of OOP
+
+OOP stands on four main principles:
+
+1. **Encapsulation** → binding data + methods together
+2. **Abstraction** → hiding complexity, showing essentials
+3. **Inheritance** → reusing existing class behavior
+4. **Polymorphism** → one interface, many forms
+
+(We’ll explore each one in its own module later.)
+
+---
+
+## 4. Classes and Objects
+
+A **class** defines the _blueprint_ of an object.\
+An **object** is an _instance_ of that class.
+
+---
+
+### 🐍 **Python Example**
+
+```
+# Define a simple class
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def start(self):
+        print(f"{self.brand} {self.model} is starting...")
+
+# Create objects
+car1 = Car("Tesla", "Model S")
+car2 = Car("Toyota", "Corolla")
+
+car1.start()
+car2.start()
+```
+
+**Output:**
+
+```
+Tesla Model S is starting...
+Toyota Corolla is starting...
+```
+
+---
+
+### ☕ **Java Example**
+
+```
+class Car {
+    String brand;
+    String model;
+
+    Car(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    void start() {
+        System.out.println(brand + " " + model + " is starting...");
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car("Tesla", "Model S");
+        Car car2 = new Car("Toyota", "Corolla");
+
+        car1.start();
+        car2.start();
+    }
+}
+```
+
+**Output:**
+
+```
+Tesla Model S is starting...
+Toyota Corolla is starting...
+```
+
+---
+
+## 5. Why OOP Matters for Engineers
+
+- ✅ Better **code organization**
+- ✅ Easier **maintenance and scaling**
+- ✅ Promotes **reuse** (inheritance, composition)
+- ✅ Ideal for **large teams and complex systems**
+- ✅ Enables **real-world modeling**
+
+---
+
+## 6. Quick Practice Exercise
+
+👉 **Challenge:**\
+Write a Python or Java class named `Book` that includes:
+
+- attributes: `title`, `author`, `price`
+- method: `get_info()` → prints the book info
+
+Then, create 2 book objects and print their details.
+
+---
+
+Would you like me to move on to **Module 2: Classes and Objects Deep Dive** next — with memory model, class/static/instance variables, and real-world examples?
